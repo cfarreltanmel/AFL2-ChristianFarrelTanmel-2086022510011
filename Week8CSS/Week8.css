@@ -1,0 +1,185 @@
+:root {
+    --wiki-bg: rgba(15, 15, 15, 0.95);
+    --border-color: #ffffff;
+}
+
+body {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZyBMTHJpwWfkmCGkAU8K_ALKM7f_hM38PQQ&s') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.wiki-sidebar {
+    width: 90px;
+    background: #111;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    border-right: 1px solid #333;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.sidebar-item {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-item:hover { color: white; }
+
+.sidebar-icon {
+    width: 50px;
+    height: 50px;
+    background: #444;
+    border-radius: 50%;
+    border: 2px solid #666;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.content-wrapper {
+    margin-left: 90px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-container {
+    background: #000;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-box {
+    background: url('https://alidropship.com/wp-content/uploads/2019/12/best-banner-ads-examples.jpg') no-repeat center center;
+    background-size: cover;
+    color: black;
+    width: 728px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.wiki-nav {
+    padding: 20px 40px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.logo-frame {
+    width: 130px;
+    height: 70px;
+    border: 1.5px solid var(--border-color);
+    background: #1a1a2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.nav-dropdown {
+    border: 1.5px solid var(--border-color) !important;
+    background: rgba(0,0,0,0.5) !important;
+    color: white !important;
+    border-radius: 8px !important;
+    padding: 8px 25px !important;
+}
+
+.outer-frame {
+    border: 1.5px solid var(--border-color);
+    background: var(--wiki-bg);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.inner-frame {
+    border: 1.5px solid var(--border-color);
+    padding: 20px;
+    height: 100%;
+}
+
+.infobox {
+    background: white;
+    color: black;
+    padding: 0;
+    text-align: center;
+}
+
+.infobox h3 { padding: 10px; margin: 0; font-size: 1.2rem; font-weight: bold; }
+
+.infobox-img {
+    background: #eee;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infobox-table {
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: left;
+    font-size: 13px;
+}
+
+.infobox-table td {
+    padding: 8px;
+    border: 1px solid #333;
+}
+
+.chat-bubble {
+    background: #444;
+    border-radius: 10px;
+    padding: 8px 15px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.avatar-circle {
+    width: 40px;
+    height: 40px;
+    background: #777;
+    border-radius: 50%;
+}
+
+.wiki-footer {
+    background: #999;
+    color: white;
+    padding: 40px;
+    margin-top: auto;
+}
+
+.wiki-footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .wiki-sidebar { width: 65px; }
+    .content-wrapper { margin-left: 65px; }
+    .sidebar-icon { width: 40px; height: 40px; }
+    .sidebar-item span { display: none; }
+    .banner-box { width: 100%; }
+    .wiki-nav { flex-wrap: wrap; padding: 10px; }
+}
